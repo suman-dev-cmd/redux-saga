@@ -1,8 +1,10 @@
 import React from 'react';
 import UserCard from './components/UserComponent'
+import Header from './components/Header';
 const App = () => {
   return (
-    <div className='bg-blue w-full p-8 flex justify-center font-sans'>
+    <div>
+      <Header />
       <UserCard />
     </div>
   )

@@ -11,9 +11,13 @@ const UserComponent = () => {
     },[])
     return (
         <>
-          {users.length > 0 && users.map(item=>(
-            <Card user={item} key={item.id}/> 
-          ))}
+        <div class="container my-12 mx-auto px-4 md:px-12">
+          <div class="flex flex-wrap -mx-1 lg:-mx-4">
+            {users.length > 0 && users.map(item=>(
+              <Card user={item} key={item.id}/> 
+            ))}
+          </div>
+        </div>
         </>
     )
 }
